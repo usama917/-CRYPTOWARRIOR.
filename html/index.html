@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CRYPTOWARRIORs</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #222; /* Dark background */
+            color: #eee; /* Light text color for contrast */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #555; /* Slightly lighter border for dark mode */
+            border-radius: 5px;
+            background-color: #333; /* Darker container background */
+        }
+        h1, h2, h3 {
+            color: #ddd; /* Lighter heading color */
+        }
+        #agreement {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #agreeButton {
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue button (adjust as needed) */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #agreeButton:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        #agreeButton:disabled {
+            background-color: #777; /* Gray for disabled state */
+            cursor: default;
+        }
+        a {
+            color: #00a0e9; /* Light blue for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<style>
+body {
+  background-image: url("https://www.shutterstock.com/image-illustration/closeup-golden-bitcoin-btc-cryptocurrency-600nw-1965261655.jpg"); /* Replace with your image path */
+  background-size: cover; /* Or contain, auto, etc. - see explanation below */
+  background-repeat: no-repeat; /* Or repeat, repeat-x, repeat-y - see explanation below */
+  /* Other background properties (optional) */
+  background-position: center center; /* Example: Center the image */
+  background-attachment: fixed; /* Example: Keep the image fixed while scrolling */
+}
+</style>
+
+
+<div class="container">
+  
+
+    <p> <marquee>  <h2>WELCOME TO CRYPTOWARRIORs  </h2></marquee></p>
+  <h1>Terms and Conditions</h1>
+    <marquee> 
+    <p>ARE YOU AGREE TO INVEST YOUR MONEY IN CRYPTO WITH US?</p> </marquee> 
+
+    <div id="agreement">
+        <input type="checkbox" id="agreeCheckbox">
+        <label for="agreeCheckbox">I agree to the Terms and Conditions</label><br>
+        <button id="agreeButton" disabled>I Agree</button>
+    </div>
+</div>
+
+<script>
+    const agreeCheckbox = document.getElementById('agreeCheckbox');
+    const agreeButton = document.getElementById('agreeButton');
+
+    agreeCheckbox.addEventListener('change', function() {
+        agreeButton.disabled = !this.checked;
+    });
+
+    agreeButton.addEventListener('click', function() {
+        window.location.href = "amount.html"; // Redirect to amount.html
+    });
+</script>
+
+</body>
+</html>
